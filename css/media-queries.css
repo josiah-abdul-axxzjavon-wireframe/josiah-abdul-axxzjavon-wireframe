@@ -1,3 +1,13 @@
+.page-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.header-img {
+    /*position: absolute;*/
+    width: 100%;
+}
+
 .content-wrapper{
     flex-wrap: wrap;
     align-items: center;
@@ -6,8 +16,8 @@
     display: flex;
     justify-content: flex-end;
     position: absolute;
-    top: 35px;
-    right: 525px;
+    top: 4%;
+    right: 47%;
 }
 
 li {
@@ -24,6 +34,8 @@ li {
         width: 500px;
         align-items: start ;
         flex-direction: column;
+        left: 2%;
+        bottom: 50%;
     }
 
     .sub-section{
@@ -34,8 +46,14 @@ li {
         align-items: start ;
         flex-direction: column;
         position: absolute;
-        right: 540px;
-        bottom: 70px;
+        right: 48%;
+        bottom: 5%;
+    }
+
+    footer {
+        position: absolute;
+        left: 1%;
+        bottom: 2%;
     }
 
 
