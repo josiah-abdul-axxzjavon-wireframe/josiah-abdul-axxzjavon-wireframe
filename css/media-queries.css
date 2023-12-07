@@ -1,23 +1,15 @@
-.page-wrapper {
-    position: relative;
-    width: 100%;
-}
 
-.header-img {
-    /*position: absolute;*/
-    width: 100%;
-}
 
-.content-wrapper{
-    flex-wrap: wrap;
-    align-items: center;
+li {
+    list-style: none;
+    margin: 0 10px; /* Adjust margin as needed */
 }
 .nav-links {
     display: flex;
-    justify-content: flex-end;
-    position: absolute;
-    top: 4%;
-    right: 47%;
+    position: relative;
+    top: -50px;
+    right: -678px;
+    padding: 0;
 }
 
 li {
@@ -27,33 +19,73 @@ li {
     right: 300px;
     margin: .5em;
 }
-    .main{
-        display: flex;
-        padding: 0px;
-        height: 200px;
-        width: 500px;
-        align-items: start ;
+.main{
+    display: flex;
+    padding: 0;
+    height: 200px;
+    width: 500px;
+    align-items: start ;
+    flex-direction: column;
+}
+
+.sub-section{
+    display: flex;
+    padding: 0;
+    height: 200px;
+    width: 300px;
+    align-items: start ;
+    flex-direction: column;
+    position: relative;
+    right: -600px;
+    bottom: 200px;
+}
+@media only screen and (max-width: 400px) {
+    .alert-info{
         flex-direction: column;
-        left: 2%;
-        bottom: 50%;
+
+        right: -100;
+        top: 10px;
+    }
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        right: 0; /* Adjust as needed */
+        top: 50px;
+    }
+    li {
+        margin: 10px 0; /
+    }
+    h1{
+        position:absolute;
+        right: 115px;
+        top: 20px;
+
+    }
+    img{
+        position:absolute;
+        right: 0;
+        top: 270px;
+        max-width: 400px;
+        height: auto;
+    }
+    .main{
+        position:absolute;
+        right: 30px;
+        top: 460px;
+        max-width: 300px;
+        height: auto;
     }
 
     .sub-section{
-        display: flex;
-        padding: 0;
-        height: 200px;
-        width: 300px;
-        align-items: start ;
-        flex-direction: column;
-        position: absolute;
-        right: 48%;
-        bottom: 5%;
+        position:absolute;
+        right: 30px;
+        top: 700px;
+        max-width: 300px;
+        height: auto;
     }
-
-    footer {
-        position: absolute;
-        left: 1%;
-        bottom: 2%;
+    footer{
+        position:absolute;
+        right: 160px;
+        top: 940px;
     }
-
-
+}
